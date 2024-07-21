@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: white;
+            height: 50px;
+            position: sticky;
+            top: 0px;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 5px 0px 8px black;
+            z-index: 10;
+        }
+
+        .main-container{
+
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* .left{
+            text-align: left;
+        } */
+        .right {
+
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .t {
+            margin: 12px;
+            height: 30px;
+            border: none;
+            background-color: white;
+            font-size: 15px;
+            font-family: sans-serif;
+            letter-spacing: 5px;
+        }
+
+        .t:hover {
+            background-color: grey;
+        }
+
+
+        img {
+            /* height: 100vh; */
+            width: 100%;
+        }
+
+        .main-continer-subdivision {
+            position: absolute;
+        }
+
+        .main-txt {
+            font-size: 40px;
+            font-weight: 900;
+            border: 2px solid black;
+            text-align: center;
+            color: white;
+            background-color: black;
+            opacity: 70%;
+            padding: 10px 15px;
+
+        }
+
+        .main-txt-lower {
+            font-size: 30px;
+            color: white;
+            font-size: 45px;
+        }
+
+        .main {
+            margin: 70px 30px;
+            margin-bottom: 5px;
+
+        }
+
+        .box {
+            /* float: left; */
+            width: 270px;
+            padding: 6px;
+            position: relative;
+            padding-top: 0px;
+            flex-grow: 1;
+        }
+
+        .box1 {
+            background-color: black;
+            color: white;
+            position: absolute;
+            top: 0px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 25px;
+        }
+
+        .card {
+           
+            width: 280px;
+            padding: 6px;
+            flex-grow: 1;
+            /* border: 2px solid black; */
+        }
+
+        .card_container{
+
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .upper {
+            filter: grayscale(70%);
+        }
+
+        .b {
+            height: 40px;
+            width: 100%;
+            background-color: whitesmoke;
+            border: none;
+            font-size: 17px;
+            cursor: pointer;
+
+        }
+
+        .b:hover {
+            background-color: grey;
+        }
+
+        input {
+            width: 100%;
+            margin: 10px 0px;
+            height: 30px;
+            font-size: 15px;
+            padding: 2px 5px;
+        }
+
+        .a {
+            height: 40px;
+            width: 150px;
+            background-color: black;
+            font-size: 15px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .a:hover {
+            background-color: grey;
+            border: none;
+        }
+
+        .footer {
+            height: 30px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .about {
+            padding-top: 50px;
+            /* border: 2px solid black; */
+            /* clear: both; */
+        }
+
+        .contact {
+            padding-top: 50px;
+            /* border: 2px solid black; */
+            /* clear: both; */
+        }
+
+        header a {
+
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .projects {
+
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <button style="cursor: pointer;" class="t"><b>B R</b> Architects</button>
+        </div>
+        <div class="right">
+            <button class="t">
+                <a href="#project">Project</a>
+            </button>
+            <button class="t">
+                <a href="#about">About</a>
+            </button>
+            <button class="t">
+                <a href="#contact">Contact</a>
+            </button>
+
+        </div>
+    </header>
+
+    <div class="main-container">
+        <img src="https://www.w3schools.com/w3images/architect.jpg" alt="">
+        <div class="main-continer-subdivision"><span class="main-txt">
+                BR
+            </span>
+            <span class="main-txt-lower">
+                Architects
+            </span>
+        </div>
+    </div>
+
+
+    <div class="main" id="project">
+        <h1 style="margin-bottom: 70px; font-weight: 200;"> Projects</h1>
+        <div class="projects">
+            <div class="box">
+                <img src="https://www.w3schools.com/w3images/house5.jpg" alt="" style="width: 100%;">
+                <div class="box1">Summer House</div>
+            </div>
+            <div class="box"><img src="https://www.w3schools.com/w3images/house2.jpg" alt="" style="width: 100%;">
+                <div class="box1">Brick House</div>
+            </div>
+            <div class="box"><img src="https://www.w3schools.com/w3images/house3.jpg" alt="" style="width: 100%;">
+                <div class="box1">Renovated</div>
+            </div>
+            <div class="box"><img src="https://www.w3schools.com/w3images/house4.jpg" alt="" style="width: 100%;">
+                <div class="box1">Barn House</div>
+            </div>
+            <div class="box"><img src="https://www.w3schools.com/w3images/house2.jpg" alt="" style="width: 100%;">
+                <div class="box1">Summer House</div>
+            </div>
+            <div class="box"><img src="https://www.w3schools.com/w3images/house5.jpg" alt="" style="width: 100%;">
+                <div class="box1">Brick House</div>
+            </div>
+            <div class="box"><img src="https://www.w3schools.com/w3images/house4.jpg" alt="" style="width: 100%;">
+                <div class="box1">Renovated</div>
+            </div>
+            <div class="box"><img src="https://www.w3schools.com/w3images/house3.jpg" alt="" style="width: 100%;">
+                <div class="box1">Barn House</div>
+            </div>
+
+        </div>
+
+
+        <div class="about" id="about">
+
+            <h1 style="margin-bottom: 30px; font-weight: 200;"> About</h1>
+            <hr style="border-color: #ffff;">
+            <br>
+            <p style="font-size: 18px; font-weight: 100px;margin-bottom: 40px;">Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Vel quisquam maxime deleniti culpa necessitatibus? Voluptatem quaerat dignissimos
+                veritatis neque sunt eum, enim corrupti quos minima ipsum corporis dolores architecto iste unde
+                deleniti, culpa eius perspiciatis illum eligendi earum error modi. Animi at doloremque cupiditate alias
+                ad sapiente quae rerum nobis debitis sed ipsam a, optio dolorum architecto totam laborum delectus
+                ducimus dolore reiciendis exercitationem? Illum labore soluta atque agnam veniam quidem iste ad earum!
+                Architecto pariatur maxime labore corporis exercitationem!</p>
+
+            <div class="card_container">
+                <div class="card">
+                    <div class="upper"><img src="https://www.w3schools.com/w3images/team2.jpg" alt=""></div>
+                    <div class="lower">
+                        <p style="padding-top:10px ;">
+                            <span style="font-size: 25px;">John Doe</span><br><br>
+                            <span style="color: gray;font-size: 18px;">CEO & Founder</span><br><br>
+                            <span style="font-size: 19px;"> Phasellus eget enim eu lectus faucibus vestibulum.
+                                Suspendisse
+                                sodales pellentesque elementum.</span><br><br>
+                            <button class="b">Contact</button>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="upper"><img src="https://www.w3schools.com/w3images/team1.jpg" alt=""></div>
+                    <div class="lower">
+                        <p style="padding-top:10px ;">
+                            <span style="font-size: 25px;">Jane Doe</span><br><br>
+                            <span style="color: gray;font-size: 18px;">Architect</span><br><br>
+                            <span style="font-size: 19px;"> Phasellus eget enim eu lectus faucibus vestibulum.
+                                Suspendisse
+                                sodales pellentesque elementum.</span><br><br>
+                            <button class="b">Contact</button>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="upper"><img src="https://www.w3schools.com/w3images/team3.jpg" alt=""></div>
+                    <div class="lower">
+                        <p style="padding-top:10px ;">
+                            <span style="font-size: 25px;">Mike Ross</span><br><br>
+                            <span style="color: gray;font-size: 18px;">Architect</span><br><br>
+                            <span style="font-size: 19px;"> Phasellus eget enim eu lectus faucibus vestibulum.
+                                Suspendisse
+                                sodales pellentesque elementum.</span><br><br>
+                            <button class="b">Contact</button>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="upper"><img src="https://www.w3schools.com/w3images/team4.jpg" alt=""></div>
+                    <div class="lower">
+                        <p style="padding-top:10px ;">
+                            <span style="font-size: 25px;">Dan Star</span><br><br>
+                            <span style="color: gray;font-size: 18px;">Architect</span><br><br>
+                            <span style="font-size: 19px;"> Phasellus eget enim eu lectus faucibus vestibulum.
+                                Suspendisse
+                                sodales pellentesque elementum.</span><br><br>
+                            <button class="b">Contact</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="contact" id="contact">
+
+            <h1 style="margin-bottom: 30px; font-weight: 200;"> Contact</h1>
+            <hr>
+            <br>
+            <p style="font-size: 19px;">Lets get in touch and talk about your next project.
+            </p>
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Subject">
+            <input type="text" placeholder="Comment">
+            <br><br>
+            <button class="a">SEND MESSAGE</button>
+            <br><br><br>
+            <img src="https://www.w3schools.com/w3images/map.jpg" alt="">
+
+        </div>
+    </div>
+
+    </div>
+
+    <div class="footer">Powered by
+        <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a>
+    </div>
+
+
+
+</body>
+
+</html>
